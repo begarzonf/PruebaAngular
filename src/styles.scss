@@ -1,0 +1,9 @@
+@import '~@angular/material/theming';
+@include mat-core();
+$pruebaangular-primary: mat-palette($mat-indigo);
+$pruebaangular-accent: mat-palette($mat-pink, A200, A100, A400);
+$pruebaangular-warn: mat-palette($mat-red);
+$pruebaangular-theme: mat-light-theme($pruebaangular-primary, $pruebaangular-accent, $pruebaangular-warn);
+@include angular-material-theme($pruebaangular-theme);
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
