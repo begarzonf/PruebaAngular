@@ -1,0 +1,101 @@
+.box1{
+    width: 20vw;
+    height: 150vh;
+    background: linear-gradient(45deg,#B30B08,#F63F05);
+    text-align: center;
+}
+
+.box2{
+    width: 80vw;
+    height: 15vh;
+    background-color: white;
+    -webkit-box-shadow: inset 2px 3px 45px -25px rgba(0,0,0,1);
+    -moz-box-shadow: inset 2px 3px 45px -25px rgba(0,0,0,1);
+    box-shadow: inset 2px 3px 45px -25px rgba(0,0,0,1);
+
+}
+
+.box3{
+    width: 80vw;
+    height: 135vh;
+    background-color: white;
+    -webkit-box-shadow: inset 2px 3px 45px -25px rgba(0,0,0,1);
+    -moz-box-shadow: inset 2px 3px 45px -25px rgba(0,0,0,1);
+    box-shadow: inset 2px 3px 45px -25px rgba(0,0,0,1);
+}
+
+.logOut_btn{
+    border: none;
+    background: linear-gradient(45deg,#B30B08,#F63F05);
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 16px;
+    width: 150px;
+    color: white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.title{
+    margin-top: 5%;
+}
+
+.box-products{
+    width: 20vw;
+    height: 20vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: white;
+    -webkit-box-shadow: 0px 2px 19px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 19px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 19px 1px rgba(0,0,0,0.75);
+    margin-top: 5vh;
+    margin-left: 5vw;
+    display: inline-block;
+
+}
+
+.bar{
+    width: 20vw;
+    height: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    background: linear-gradient(45deg,#B30B08,#F63F05);
+}
+
+.image{
+    width: 5vw;
+    height: 8vh;
+    margin-top: 5%;
+}
+
+.image2{
+    width: 2vw;
+    height: 2vh;
+    margin-left: 5px;
+}
+
+.image3{
+    width: 40vw;
+    height: 50vh;
+    margin-left: 5px;
+}
+
+.search-bar{
+    margin: auto;
+    text-align: center;
+}
+
+.pag_btn{
+    border: none;
+    background: linear-gradient(45deg,#B30B08,#F63F05);
+    cursor: pointer;
+    border-radius: 3px;
+    width: 7vw;
+    height: 2vh;
+    color: white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    margin-left: 10px;
+}

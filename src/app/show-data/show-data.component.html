@@ -1,0 +1,49 @@
+<div>
+    <div style="display: flex;">
+        <div class="box1">
+            <img src="../../assets/wom.png" alt="won" class="title">
+            <br>
+            <button class="logOut_btn" (click)="logOut()">Cerrar sesion</button>
+        </div>
+        <div>
+            <div class="box2">
+                <div class="search-bar">
+                    <input type="text" [(ngModel)]="stringSearchR" (keyup.enter)="remoteSearch()" class="title" placeholder="Busqueda Remota">
+                    <img src="../../assets/lupa.svg" alt="lupa" (click)=remoteSearch() class="image2">
+                </div>
+            </div>
+            <div class="box3">
+                <div class="search-bar">
+                    <input type="text" [(ngModel)]="stringSearchL" (keyup)="localSearch()" class="title" placeholder="Busqueda Local">
+                    <img src="../../assets/lupa.svg" alt="lupa" (click)=localSearch() class="image2">
+                    <button (click)="prevPage()" class="pag_btn" [disabled]="pageNumber==1">Anterior</button>
+                    <button class="pag_btn">{{pageNumber}}</button>
+                    <button (click)="nextPage()" class="pag_btn">Siguiente</button>
+                </div>
+                <div *ngFor="let item of FilteredProducts" class="box-products"
+                    (click)="openPopUp(item)">
+                    <img src="{{item.image_url}}" alt="imagen" class="image">
+                    <p>{{item.name}}</p>
+                    <p>${{item.value}}</p>
+                    <div class="bar">
+                        <p>Obtienes {{item.points}} puntos</p>
+                    </div>
+                </div>
+                <app-show-product class="my-prompt" [isOpen]="popUpOpen">
+                    <div>
+                        <img src="{{arrProduct.image_url}}" alt="imagen" class="image3">
+                        <p>{{arrProduct.name}}</p>
+                        <br>
+                        <p>${{arrProduct.value}}</p>
+                        <br>
+                        <p style="color: orangered;">Obtienes {{arrProduct.points}} puntos</p>
+                        <button class="pag_btn" (click)="cancelOption()">Cerrar</button>
+                    </div>
+                </app-show-product>
+                <div style="text-align: center;">
+                    <button (click)="goBack()" class="pag_btn">Volver</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

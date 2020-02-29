@@ -1,0 +1,45 @@
+.title{
+    margin-top: 5%;
+}
+
+.login {
+    height: 25vh;
+    width: 20vw;
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    font-weight: bold;
+    -webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+    border-image-slice: 1;
+    border: gainsboro solid 5px;
+    background: #FFFFFF;
+    margin-left: 40%;
+    margin-right: 50%;
+    margin-top: 5%;
+}
+  
+.login{
+    text-align: center;
+}
+  
+.background{
+    background: linear-gradient(45deg,#B30B08,#F63F05);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+} 
+
+.login_btn{
+    border: none;
+    background: linear-gradient(45deg,#B30B08,#F63F05);
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 16px;
+    width: 150px;
+    color: white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

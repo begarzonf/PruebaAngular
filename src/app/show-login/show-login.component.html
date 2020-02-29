@@ -1,0 +1,21 @@
+<div class="background">
+    <div>
+        <img src="../../assets/wom.png" alt="won" class="title">
+    </div>
+    <div class="login">
+        <div class="title">
+            <h2 class="title">Iniciar sesion</h2>
+        </div>
+        <form [formGroup]="loginForm" (ngSubmit)=login(loginForm.value)>
+            <input formControlName="email" type="text" placeholder="Email">
+            <div *ngIf="loginForm.get('email').hasError('email') $$ loginForm.get('email').touched">Email no valido
+            </div>
+            <div></div>
+            <br />
+            <input formControlName="password" type="text" placeholder="Password">
+            <br />
+            <div *ngIf="credentialError">Credenciales no validas</div>
+            <button class="login_btn" [disabled]="loginForm.invalid" type="submit">Ingresar</button>
+        </form>
+    </div>
+</div>
